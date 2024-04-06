@@ -6,4 +6,7 @@
 	[PrecioActual] DECIMAL(22,2),
 	[FechaInicial] DATETIME NOT NULL,
 	[FechaCierre] DATETIME NOT NULL,
+	[Eliminado] BIT,
+	CONSTRAINT PK_Subasta PRIMARY KEY(Id),
+	CONSTRAINT FK_Subasta_ObraArte FOREIGN KEY(ObraArte) REFERENCES ObraArte(Id),
 )

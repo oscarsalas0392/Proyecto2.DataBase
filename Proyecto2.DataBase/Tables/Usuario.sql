@@ -6,6 +6,7 @@
 	[Contrasena] VARCHAR(200) NOT NULL,
 	[TipoUsuario] INT NOT NULL,
 	[Foto] VARCHAR(MAX),
+	[Eliminado] BIT,
 	CONSTRAINT PK_Usuario PRIMARY KEY(Id),
 
 )

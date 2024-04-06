@@ -7,7 +7,9 @@
 	[Estilo] VARCHAR(300) NOT NULL,
 	[Experiencia] VARCHAR(300) NOT NULL,
 	[Enlace] VARCHAR(200) NOT NULL,
+	[Eliminado] BIT,
 	CONSTRAINT PK_Artista PRIMARY KEY(Id),
-	CONSTRAINT FK_Artista_Usuario FOREIGN KEY(Usuario) REFERENCES Usuario(Id)
+	CONSTRAINT FK_Artista_Usuario FOREIGN KEY(Usuario) REFERENCES Usuario(Id).
+
 
 )

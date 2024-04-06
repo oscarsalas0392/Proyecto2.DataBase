@@ -5,5 +5,7 @@
 	[ObraArte] INT NOT NULL,
 	[Monto] DECIMAL(22,2),
 	[Tarjeta] VARCHAR(18) NOT NULL,
-	[Fecha] DATETIME NOT NULL
+	[Fecha] DATETIME NOT NULL,
+	[Eliminado] BIT,
+	CONSTRAINT PK_Transaccion PRIMARY KEY(Id),
 )
