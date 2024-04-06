@@ -1,7 +1,6 @@
 ﻿ 
  INSERT INTO ConfiguracionApp VALUES(50000,0)
 
-
  INSERT INTO TipoUsuario VALUES('Artista',0)
  INSERT INTO TipoUsuario VALUES('Comprador',0)
 
