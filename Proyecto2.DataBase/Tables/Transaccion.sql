@@ -8,4 +8,5 @@
 	[Fecha] DATETIME NOT NULL,
 	[Eliminado] BIT,
 	CONSTRAINT PK_Transaccion PRIMARY KEY(Id),
+	CONSTRAINT FK_Transaccion_Usuario FOREIGN KEY(Usuario) REFERENCES Usuario(Id)
 )
