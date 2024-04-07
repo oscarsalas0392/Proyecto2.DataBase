@@ -5,7 +5,7 @@
 	[Altura] DECIMAL(5,2) NOT NULL,
 	[Ancho] DECIMAL(5,2) NOT NULL,
 	[Profundidad] DECIMAL(5,2) NOT NULL,
-	[Eliminado] BIT,
+	[Eliminado] BIT NOT NULL,
 	CONSTRAINT PK_DimensionObra PRIMARY KEY(Id),
 	CONSTRAINT FK_DimensionObra_ObraArte FOREIGN KEY(ObraArte) REFERENCES ObraArte(Id)
 

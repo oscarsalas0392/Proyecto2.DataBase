@@ -6,7 +6,7 @@
 	[Descripcion] VARCHAR(500) NOT NULL,
 	[Enviado] BIT NOT NULL,
 	[Error] VARCHAR(500),
-	[Eliminado] BIT,
+	[Eliminado] BIT NOT NULL,
 	CONSTRAINT PK_Notificacion PRIMARY KEY(Id),
 
 )

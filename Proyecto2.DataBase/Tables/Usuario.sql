@@ -6,7 +6,8 @@
 	[Contrasena] VARCHAR(200) NOT NULL,
 	[TipoUsuario] INT NOT NULL,
 	[Foto] VARCHAR(MAX),
-	[Eliminado] BIT,
+	[Eliminado] BIT NOT NULL,
 	CONSTRAINT PK_Usuario PRIMARY KEY(Id),
+	CONSTRAINT FK_Usuario_TipoUsuario FOREIGN KEY(TipoUsuario) REFERENCES TipoUsuario(Id)
 
 )
