@@ -8,5 +8,6 @@
 	[Fecha] DATETIME NOT NULL,
 	[Eliminado] BIT NOT NULL,
 	CONSTRAINT PK_Transaccion PRIMARY KEY(Id),
-	CONSTRAINT FK_Transaccion_Usuario FOREIGN KEY(Usuario) REFERENCES Usuario(Id)
+	CONSTRAINT FK_Transaccion_Usuario FOREIGN KEY(Usuario) REFERENCES Usuario(Id),
+	CONSTRAINT FK_Transaccion_ObraArte FOREIGN KEY(ObraArte) REFERENCES ObraArte(Id)
 )
