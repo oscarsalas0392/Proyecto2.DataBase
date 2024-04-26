@@ -13,7 +13,7 @@
 CREATE TRIGGER actualizarPrecioActual ON Oferta AFTER INSERT
    AS
     BEGIN
-	  DECLARE @Subasta DECIMAL
+	  DECLARE @Subasta INT
 	  DECLARE @PrecioActual DECIMAL
 	  SELECT @Subasta= i.Subasta, @PrecioActual = i.Monto from inserted i
 
